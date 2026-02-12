@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igor's Coding Quest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="title-screen" class="screen active">
+            <h1>IGOR'S CODING QUEST</h1>
+            <div class="pixel-art-igor"></div>
+            <p class="intro-text">Help Igor learn 5 coding languages!</p>
+            <button id="start-btn" class="pixel-btn">START GAME</button>
+        </div>
+
+        <div id="game-screen" class="screen">
+            <div id="hud">
+                <div id="level-info">
+                    <span id="current-level">Level 1</span>
+                    <span id="language-name">Python</span>
+                </div>
+                <div id="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+                <div id="score">Score: <span id="score-value">0</span></div>
+            </div>
+            <canvas id="game-canvas"></canvas>
+            <div id="question-panel">
+                <h3 id="question-text"></h3>
+                <div id="answers"></div>
+            </div>
+        </div>
+
+        <div id="victory-screen" class="screen">
+            <h1>CONGRATULATIONS!</h1>
+            <div class="diploma">
+                <div class="diploma-border">
+                    <h2>🎓 DIPLOMA 🎓</h2>
+                    <p>This certifies that</p>
+                    <h3>IGOR PETROV</h3>
+                    <p>has successfully mastered</p>
+                    <ul class="languages-list">
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>HTML/CSS</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                    </ul>
+                    <p class="signature">Date: February 12, 2026</p>
+                </div>
+            </div>
+            <div class="celebration">🎉 🎊 🎈 🎆 ⭐</div>
+            <button id="play-again-btn" class="pixel-btn">PLAY AGAIN</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
